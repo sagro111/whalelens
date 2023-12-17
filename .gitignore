@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+ngrok
+.dev.vars
+
+dumper/dump.sql
