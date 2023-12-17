@@ -8,7 +8,7 @@ export type ApplicationTheme = {
     defaultPadding: string;
     menuColor: string;
     textColor: string;
-    iconColor: {
+    icon: {
         primary: string;
         active: string;
     };

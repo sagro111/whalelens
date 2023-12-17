@@ -1,10 +1,21 @@
-import { GlobalStyles } from '@/app/app.styled.ts';
-import { ThemeProvide } from '@/shared/theme/theme.view.tsx';
-import { Layout } from '@/shared/ui/layout';
+import { ReactNode } from 'react';
+
+import { ThemeProvide } from '@/shared/theme';
+import { ScreenId } from '@/shared/ui/menu';
+import { ScreensWidget } from '@/widgets/screens';
+
+import { GlobalStyles } from './app.styled.ts';
+
+const SCREENS: Record<ScreenId, ReactNode> = {
+    home: 'Home',
+    news: 'News',
+    lenses: 'Lemnses',
+    profile: 'profile',
+};
 
 export const App = () => (
     <ThemeProvide>
         <GlobalStyles />
-        <Layout>Hello</Layout>
+        <ScreensWidget screens={SCREENS} />
     </ThemeProvide>
 );

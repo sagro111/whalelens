@@ -5,7 +5,7 @@ export const LIGHT_THEME: ApplicationTheme = {
     defaultPadding: '1rem',
     menuColor: '#FFFFFF',
     textColor: '#212529',
-    iconColor: {
+    icon: {
         primary: '#6C757D',
         active: '#0063F5',
     },
@@ -25,7 +25,7 @@ export const DARK_THEME: ApplicationTheme = {
     defaultPadding: '1rem',
     menuColor: '#0D0D0D',
     textColor: '#D6DADE',
-    iconColor: {
+    icon: {
         primary: '#6C757D',
         active: '#0063F5',
     },

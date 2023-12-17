@@ -1,16 +1,17 @@
 import { ReactNode } from 'react';
 
-import { Menu } from '@/shared/ui/menu';
-
 import { Container, Content, MenuContainer } from './layout.styled.ts';
 
-export const Layout = ({ children }: { children: ReactNode }) => {
+type Props = {
+    contentComponent: ReactNode;
+    menuComponent: ReactNode;
+};
+
+export const Layout = ({ contentComponent, menuComponent }: Props) => {
     return (
         <Container>
-            <Content>{children}</Content>
-            <MenuContainer>
-                <Menu />
-            </MenuContainer>
+            <Content>{contentComponent}</Content>
+            <MenuContainer>{menuComponent}</MenuContainer>
         </Container>
     );
 };
