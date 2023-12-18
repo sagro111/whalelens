@@ -18,6 +18,7 @@ export const MenuItem = styled.button<{ $isActive: boolean }>`
     color: ${({ theme, $isActive }) => ($isActive ? theme.icon.active : theme.icon.primary)};
     background-color: transparent;
     border: 0;
+    font-size: 0.75rem;
 
     & svg {
         margin-bottom: 0.125rem;
